@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "es6-promise": "^4.2.8",
+    "events": "^3.3.0",
     "webworkify-webpack": "^2.1.5"
   },
   "devDependencies": {
@@ -29,6 +30,7 @@
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
     "browser-sync": "^2.27.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.30.0",
     "exports-loader": "^3.0.0",
     "source-map-loader": "^3.0.0",
@@ -39,5 +41,10 @@
     "webpack-cli": "^4.7.2"
   },
   "author": "zheng qian <xqq@xqq.im>",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

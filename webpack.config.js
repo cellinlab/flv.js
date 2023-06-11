@@ -58,7 +58,13 @@ let config = {
                 use: 'source-map-loader'
             }
         ]
-    }
+    },
+
+    devServer: {
+        static: {
+            directory: path.join(__dirname),
+        },
+    },
 };
 
 module.exports = (env, argv) => {
